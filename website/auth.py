@@ -19,7 +19,7 @@ def login():
             if check_password_hash(user.password, password):
                 flash('Sessão iniciada com sucesso!', category='success')
                 login_user(user, remember=True)
-                return redirect(url_for('views.home'))
+                return redirect(url_for('notes.start'))
             else:
                 flash('Senha incorreta, por favor tente novamente!', category='error')
         else:
@@ -64,6 +64,6 @@ def signup():
                 db.session.commit()
                 login_user(new_user, remember=True)
                 flash('Conta criada!', category='success')
-                return redirect(url_for('views.home'))
+                return redirect(url_for('notes.start'))
 
     return render_template("sign_up.html", user=current_user, email = email, name = name)

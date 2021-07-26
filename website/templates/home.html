@@ -9,7 +9,15 @@
         <div class="card-body">
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                  <footer class="blockquote-footer">Exemplo de uma nota</footer>
+                    {% if notesData %}
+                        {% for note in notesData %}
+                            <footer class="blockquote-footer">{{note.description}}</footer>
+                        {% endfor %}
+                    {% else %}
+                        Não tem notas guardadas!
+                    {% endif %}
+                    
+                  
                 </blockquote>
               </div>
             <form action="" method="post">
