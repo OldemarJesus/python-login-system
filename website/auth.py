@@ -35,18 +35,20 @@ def logout():
 
 @auth.route("sign-up", methods=['GET', 'POST'])
 def signup():
-
+    # set default values
+    email = ''
+    name = ''
     if request.method == 'POST':
         email = request.form.get('email')
         name = request.form.get('name')
         password = request.form.get('password')
         passwordConf = request.form.get('passwordConf')
 
+        user = User.query.filter_by(email=email).first()
+
         if len(email) < 4:
             flash('Email tem de conter mais de 4 caracteres.', category='error')
         else:
-            user = User.query.filter_by(email=email)
-
             if user:
                 flash('Esta conta já existe!', category='error')
             elif len(name) < 3:
@@ -60,8 +62,8 @@ def signup():
                 new_user = User(email=email, name=name, password=generate_password_hash(password, method='sha256'))
                 db.session.add(new_user)
                 db.session.commit()
-                login_user(user, remember=True)
+                login_user(new_user, remember=True)
                 flash('Conta criada!', category='success')
                 return redirect(url_for('views.home'))
 
-    return render_template("sign_up.html", user=current_user)
+    return render_template("sign_up.html", user=current_user, email = email, name = name)

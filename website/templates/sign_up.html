@@ -11,13 +11,13 @@
                 <div class="mb-3 row">
                     <label for="inputName" class="col-sm-3 col-form-label">Nome</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="inputName" name="name">
+                        <input type="text" class="form-control" id="inputName" name="name" value="{% if name %}{{name}}{% endif %}">
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="inputEmail" name="email">
+                        <input type="text" class="form-control" id="inputEmail" name="email" value="{% if email %}{{email}}{% endif %}">
                     </div>
                 </div>
                 <div class="mb-3 row">

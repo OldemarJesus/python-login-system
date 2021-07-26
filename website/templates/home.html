@@ -2,6 +2,24 @@
 
 {% block content %}
 <div class="mt-5">
-    <h1>Página inicial</h1>
+    <div class="card mx-auto" style="width: 44rem;">
+        <div class="card-header">
+            Minhas Notas
+        </div>
+        <div class="card-body">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <footer class="blockquote-footer">Exemplo de uma nota</footer>
+                </blockquote>
+              </div>
+            <form action="" method="post">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Escreva aqui a sua nota" aria-label="Escreva aqui a sua nota" aria-describedby="nota" name="nota">
+                    <button class="btn btn-outline-primary" type="submit" id="nota">Guardar</button>
+                  </div>
+            </form>
+        </div>
+    </div>
+
 </div>
 {% endblock %}

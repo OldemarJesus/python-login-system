@@ -1,0 +1,33 @@
+{% extends "base.html" %}{% block title %}Perfil{% endblock %}
+
+{% block content %}
+<div class="mt-5">
+    <div class="card mx-auto" style="width: 34rem;">
+        <div class="card-header">
+            Perfil
+        </div>
+        <div class="card-body">
+            <form action="" method="post" id="perfil">
+                <div class="mb-3 row">
+                    <label for="inputName" class="col-sm-3 col-form-label">Nome</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="name" id="inputName" value="{{user.name}}">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="email" id="inputEmail" value="{{user.email}}">
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-primary m-3" type="submit" form="perfil">Atualizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
