@@ -8,7 +8,7 @@ The main files are:
 * auth.py
 * notes.py
 
-### views.py
+### [views.py](https://github.com/OldemarJesus/python-login-system/blob/main/website/views.py)
 Trait the action on the profile page of the user
 
 ### auth.py
