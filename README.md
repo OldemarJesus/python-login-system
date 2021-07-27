@@ -1,5 +1,5 @@
 # python-login-system
-Project developed in python using **flask framework**
+Project developed in python using [**flask framework**](https://flask.palletsprojects.com/en/2.0.x/)
 
 This project was developed to allowed people to store their notes in your personal account.
 
@@ -19,4 +19,4 @@ Perform the action of **add** a note or **delete** them
 
 All this file are register on de [`` __init__.py ``](https://github.com/OldemarJesus/python-login-system/blob/main/website/__init__.py) file located on the website folder.
 
-In this project is using the ***sqlite database*** to store data and ***flask_login*** to trait session of the user
+In this project is using the [***sqlite database***](https://www.sqlite.org/index.html) to store data and [***flask_login***](https://flask-login.readthedocs.io/en/latest/) to trait session of the user
