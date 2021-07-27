@@ -11,12 +11,12 @@ The main files are:
 ### [views.py](https://github.com/OldemarJesus/python-login-system/blob/main/website/views.py)
 Trait the action on the profile page of the user
 
-### auth.py
+### [auth.py](https://github.com/OldemarJesus/python-login-system/blob/main/website/auth.py)
 Work with all action about de **login**, **register** and **logout**
 
-### notes.py
+### [notes.py](https://github.com/OldemarJesus/python-login-system/blob/main/website/notes.py.py)
 Perform the action of **add** a note or **delete** them
 
-All this file are register on de `` __init__.py `` file located on the website folder.
+All this file are register on de [`` __init__.py ``](https://github.com/OldemarJesus/python-login-system/blob/main/website/__init__.py) file located on the website folder.
 
 In this project is using the ***sqlite database*** to store data and ***flask_login*** to trait session of the user
