@@ -17,6 +17,6 @@ Work with all action about de **login**, **register** and **logout**
 ### notes.py
 Perform the action of **add** a note or **delete** them
 
-All this file are register on de ***__init__.py*** file located on the website folder.
+All this file are register on de *** `` __init__.py `` *** file located on the website folder.
 
 In this project is using the ***sqlite database*** to store data and ***flask_login*** to trait session of the user
